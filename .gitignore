@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+frontend/node_modules/
+dist/
+build/
+
+# Data and Env
+.env
+data/
+*.parquet
+*.index
+*.pdf
+
+# Extra generated files
+*.docx
+*.md

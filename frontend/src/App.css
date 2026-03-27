@@ -1,0 +1,135 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+}
+
+.header {
+  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.status-bar {
+  display: flex;
+  gap: 12px;
+}
+
+.status {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.status.connected {
+  background-color: rgba(76, 175, 80, 0.3);
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+.status.disconnected {
+  background-color: rgba(211, 47, 47, 0.3);
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+.warning {
+  background-color: #f57f17;
+  color: #fff;
+  padding: 16px 24px;
+  margin: 24px;
+  border-radius: 8px;
+  border-left: 4px solid #ffd700;
+  font-weight: 500;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #333;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 12px 24px;
+  background-color: rgba(100, 181, 246, 0.1);
+  color: #64b5f6;
+  border: 2px solid #64b5f6;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  background-color: rgba(100, 181, 246, 0.2);
+}
+
+.tab.active {
+  background-color: #64b5f6;
+  color: #000;
+  border-color: #42a5f5;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 16px 24px;
+  text-align: center;
+  border-top: 1px solid #333;
+  color: #999;
+  margin-top: 24px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .main-content {
+    padding: 12px;
+  }
+
+  .tabs {
+    padding: 12px;
+  }
+
+  .tab {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
